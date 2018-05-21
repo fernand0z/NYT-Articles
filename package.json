@@ -6,8 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js",
-        "bundle": "webpack -d --progress --colors",
-        "heroku-postbuild": "node scripts/build.js"
+        "bundle": "webpack -d --progress --colors"
+        
     },
     "repository": {
         "type": "git",
