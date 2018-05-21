@@ -1,12 +1,13 @@
 {
-    "name": "nyt-react",
+    "name": "NYT-Articles",
     "version": "1.0.0",
     "description": "A Node, Express, MongoDB, and ReactJS application where users can query, display, and save articles from the New York Times Article Search API.",
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js",
-        "bundle": "webpack -d --progress --colors"
+        "bundle": "webpack -d --progress --colors",
+        "heroku-postbuild": "node scripts/build.js"
     },
     "repository": {
         "type": "git",

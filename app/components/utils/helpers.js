@@ -1,6 +1,10 @@
 // Node Dependencies
 var axios = require('axios');
 
+
+
+
+
 // NY Times API Request Function
 var articleQuery = function(topic, beginYear, endYear){
 
@@ -8,6 +12,7 @@ var articleQuery = function(topic, beginYear, endYear){
 
   var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey + "&q=" +
                   topic + "&begin_date=" + beginYear + "0101" + "&end_date=" + endYear + "1231";
+
 
   // Create a JavaScript *Promise*
   return new Promise(function (fulfill, reject){
@@ -45,6 +50,10 @@ var articleQuery = function(topic, beginYear, endYear){
 
 }
 
+
+
+
+
 // API Post Request Function
 var apiSave = function(articleObj){
 
@@ -68,9 +77,16 @@ var apiSave = function(articleObj){
       else{
         reject("");
       }
+      
     })
-  });  
+
+  });
+  
 }
+
+
+
+
 
 // API Post Request Function
 var apiGet = function(){

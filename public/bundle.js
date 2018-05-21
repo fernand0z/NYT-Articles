@@ -49,11 +49,6 @@
 
 	"use strict";
 	
-	// @author: Thomas Thompson
-	// @github: tomtom28
-	// @comment: HW for Week 19 - NY Time Article Search with ReactJS!
-	
-	
 	// Include the Main React Dependencies
 	var React = __webpack_require__(/*! react */ 1);
 	var ReactDOM = __webpack_require__(/*! react-dom */ 32);
@@ -22090,8 +22085,12 @@
 	        { className: "page-header" },
 	        React.createElement(
 	          "h1",
-	          { className: "text-center" },
-	          React.createElement("img", { style: { width: "70%" }, src: "img/nyt-header.svg", alt: "The New York Times" })
+						{ className: "text-center" },
+						React.createElement(
+							"b",
+							null,
+							"New York Times Article Search"
+						),
 	        ),
 	        React.createElement(
 	          "h2",
@@ -22102,7 +22101,7 @@
 	            React.createElement(
 	              "i",
 	              null,
-	              "A React Rendition"
+	              "Created with React"
 	            )
 	          )
 	        ),
@@ -24220,6 +24219,6 @@
 	// Export the component back for use in Main file
 	module.exports = Saved;
 
-}
-]);
+/***/ }
+/******/ ]);
 //# sourceMappingURL=bundle.js.map
